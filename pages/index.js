@@ -12,7 +12,6 @@ export async function getStaticProps() {
   const allPostsData = getPostsData().sort((a, b) => {
     return a.date < b.date ? -1 : 1;
   });
-  console.log(allPostsData);
   return {
     props: {
       allPostsData,
